@@ -1,7 +1,7 @@
 <?php
     include "functions.php";
 
-    session_unset();
+    session_start();
 
     $currency = "TRY";
     $c_symbol = "₺";

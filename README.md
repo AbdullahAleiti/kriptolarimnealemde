@@ -13,6 +13,8 @@ and make the password an empty string to gain access or use `create-portfolio.ph
 php create_portfolio.php
 ```
 
+I have used www.cryptocompare.com as an API provider. It is a third party service. You may have to signup for using their services.
+
 After setting it up you are ready to upload it to your server or use it locally.
 For you financial privacy, You can make sure that only `/public` folder is accessible from your server provider. 
 

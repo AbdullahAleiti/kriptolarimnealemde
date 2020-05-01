@@ -16,9 +16,9 @@
 
     if($_SERVER['REQUEST_METHOD'] == "POST")
     {
-        if(password_verify($_POST["pass"],$data->password))
+        if(password_verify($_POST["pass"],$userData->password))
         {
-            $_SESSION["user"] = $data->name;
+            $_SESSION["user"] = $userData->name;
             header("Location: watch.php");
         } 
         else {

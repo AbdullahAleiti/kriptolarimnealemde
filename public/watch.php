@@ -1,8 +1,6 @@
 <?php
     include "./init.php";
 
-    session_start();
-
     // Change your location's timezone
     date_default_timezone_set("Europe/Istanbul");
 
@@ -11,21 +9,22 @@
     
 
     $portfolio = $userData->portfolio;
-    //please enter your api key for cryptocompare
-    $json = file_get_contents("https://min-api.cryptocompare.com/data/pricemulti?fsyms=". implode(",",array_keys((array)$portfolio))."&tsyms=".$currency."&api_key=yourapikey");
+
+    //You can insert your api for cryptocompare
+    $json = file_get_contents("https://min-api.cryptocompare.com/data/pricemulti?fsyms=". implode(",",array_keys((array)$portfolio))."&tsyms=".$currency);
     $prices = json_decode($json);
 
     
     $time_of_day = intval(date("H"));
 
-    $greeting = "Hello";
+    $greeting = "Merhaba";
     
     if($time_of_day >= 4 && $time_of_day <= 11)
-        $greeting = "Good morning";
+        $greeting = "Günaydın";
     if($time_of_day >= 12 && $time_of_day <= 16)
-        $greeting = "Good evening";
+        $greeting = "Iyi günler";
     if($time_of_day >= 17 && $time_of_day <= 20)
-        $greeting = "Good afternoon";
+        $greeting = "Iyi akşamlar";
 
     include "./header.php";
 ?>
