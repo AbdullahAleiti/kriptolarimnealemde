@@ -1,4 +1,4 @@
-# kriptolar ne Alemde
+# kriptolarım ne Alemde
 
 A beautiful web application for tracking your cryptocurrency holdings.
 It is a light `php` application that you can setup easily on your local computer and deploy it on your server.
