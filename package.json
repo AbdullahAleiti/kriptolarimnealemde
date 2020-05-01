@@ -1,0 +1,5 @@
+{
+    "scripts": {
+        "start":"php create_portfolio.php"
+    }
+}

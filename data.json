@@ -1,0 +1,8 @@
+{
+    "name":"your_name",
+    "password":"your_hashed_password_put_empty_string_for_no_password",
+    "portfolio":
+    {
+        "BTC":0.5
+    }
+}
